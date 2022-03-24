@@ -13,7 +13,7 @@ getgenv().CheckIfJumped = true
 
 local Players, Uis, RService, SGui = game:GetService"Players", game:GetService"UserInputService", game:GetService"RunService", game:GetService"StarterGui";
 local Client, Mouse, Camera, CF, RNew, Vec3, Vec2 = Players.LocalPlayer, Players.LocalPlayer:GetMouse(), workspace.CurrentCamera, CFrame.new, Ray.new, Vector3.new, Vector2.new;
-local Aimlock, MousePressed, CanNotify = false, false, false;
+local MousePressed, CanNotify = false, false;
 local AimlockTarget;
 local OldPre;
 
@@ -129,7 +129,7 @@ RService.RenderStepped:Connect(function()
             CanNotify = false 
         end
     end
-    if Aimlock == true and MousePressed == true then 
+    if getgenv().Aimlock == true and MousePressed == true then 
         if AimlockTarget and AimlockTarget.Character and AimlockTarget.Character:FindFirstChild(getgenv().AimPart) then 
             if getgenv().FirstPerson == true then
                 if CanNotify == true then
