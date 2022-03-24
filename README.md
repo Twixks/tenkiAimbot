@@ -1,3 +1,3 @@
 # Read.Md
 
-*This is fully built aimbot made by **Tenaki**
+This is fully built aimbot made by**Tenaki**
