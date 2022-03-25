@@ -1,3 +1,4 @@
+getgenv().Aimlock = false
 getgenv().AimlockKey = 'q'
 getgenv().OldAimPart = "HumanoidRootPart"
 getgenv().AimPart = "HumanoidRootPart" -- For R15 Games: {UpperTorso, LowerTorso, HumanoidRootPart, Head} | For R6 Games: {Head, Torso, HumanoidRootPart}
